@@ -57,7 +57,7 @@ error
 """
 # part 3
 # 在 Thing 类中添加一个 mangle 方法，与 part 2 相同
-def Thing:
+class Thing3:
     def set(self, v):
         self.x = v
     def get(self):
@@ -68,7 +68,41 @@ def Thing:
 
 # part 4
 def mangle(z):
-    nt = Thing()
+    nt = Thing3()
     nt.set(z)
     nt.managle()
     return nt
+
+# 1.4.5
+class Thing4:
+    def set(self, v):
+        self.x = v
+
+    def get(self):
+        return self.x
+
+    def clone(self):
+        new_thing = Thing4()      # Create a new instance of Thing
+        new_thing.set(self.get())  # Set its 'x' value to the current 'x' value
+        return new_thing         # Return the new instance
+
+# part 2
+class Thing5:
+    def set(self, v):
+        self.x = v
+
+    def get(self):
+        return self.x
+
+    def clone(self):
+        new_thing = Thing5()
+        new_thing.set(self.get())
+        return new_thing
+
+    def __str__(self):
+        return f"output value is {self.get()}"
+"""
+a = Thing5()
+a.set(3)
+print(a)
+"""
