@@ -30,6 +30,7 @@ def sumAbsLst(lst1=None, lst2=None):
         lst1 = [1, 2]
     return sum(abs(x * y) for x, y in zip(lst1, lst2))
 
+
 # 1.4.4
 # part 1
 """
@@ -55,16 +56,21 @@ class
 4
 error
 """
+
+
 # part 3
 # 在 Thing 类中添加一个 mangle 方法，与 part 2 相同
 class Thing3:
     def set(self, v):
         self.x = v
+
     def get(self):
         return self.x
+
     def mangle(self):
-        self.set(self.get()+1)
+        self.set(self.get() + 1)
         self.hasBeenMangled = True
+
 
 # part 4
 def mangle(z):
@@ -72,6 +78,7 @@ def mangle(z):
     nt.set(z)
     nt.managle()
     return nt
+
 
 # 1.4.5
 class Thing4:
@@ -82,9 +89,10 @@ class Thing4:
         return self.x
 
     def clone(self):
-        new_thing = Thing4()      # Create a new instance of Thing
+        new_thing = Thing4()  # Create a new instance of Thing
         new_thing.set(self.get())  # Set its 'x' value to the current 'x' value
-        return new_thing         # Return the new instance
+        return new_thing  # Return the new instance
+
 
 # part 2
 class Thing5:
@@ -101,10 +109,66 @@ class Thing5:
 
     def __str__(self):
         return f"output value is {self.get()}"
+
+
 """
 a = Thing5()
 a.set(3)
 print(a)
 """
+
+
+class Ain:
+    number = 100
+
+    def __init__(self, name):
+        self.name = name
+
+    def cat(self): return f"MEW {self.name} times"
+
+
+ani = Ain()
+print(ani.cat())
+print(ani.number)
+
+
+# 继承
+class Dog:
+    cry = "barl"
+
+    def __init__(self, name):
+        self.name = name
+
+    def greeting(self):
+        return "hello" + self.name + self.cry
+
+
+lass = Dog("lassie")
+
+
+class Retriever(Dog):
+    pass
+
+
+Benji = Retriever("beiji")
+Benji.greeting()
+
+
+class Golden(Retriever):
+    def greeting(self):
+        return "OHAI"
+
+
+hale = Golden("hale")
+hale.greeting()
+
+
+
+
+
+
+
+
+
 
 
