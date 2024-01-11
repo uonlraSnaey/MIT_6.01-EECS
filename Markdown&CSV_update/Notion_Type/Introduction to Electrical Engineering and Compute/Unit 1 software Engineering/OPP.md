@@ -1,5 +1,7 @@
 # OPP
 
+Owner: Kasen Jones
+
 [第 1 节讲义：面向对象编程 (PDF)](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/resources/mit6_01scs11_ses01/)
 
 reading chapters:
