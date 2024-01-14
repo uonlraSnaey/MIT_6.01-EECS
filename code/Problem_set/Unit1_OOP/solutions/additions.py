@@ -18,7 +18,7 @@ b = [a]
 # 使用列表推导式
 def evenSquare(n):
     square = [x ** 2 for x in n if x % 2 == 0]
-    return square
+    return squarte
 
 
 # part 2
